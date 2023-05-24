@@ -13,7 +13,12 @@
         $greeting = "Hello";
         echo "$greeting, World";
         echo "<br>";
-        echo "I can make changes! Did it work?"
+        echo "I can make changes! Did it work?";
+        for ($i = 10; $i >= 0; $i--) {
+            echo $i;
+            echo "<br>";
+            sleep(1);
+        }
 
     ?>
     </h1>
