@@ -2,6 +2,9 @@
 
 $heading = "Dogs";
 
-echo ['one', 'two', 'three'];
+echo "<pre>";
+var_dump($_SERVER);
+echo "</pre>";
+die();
 
 require "./views/index.view.php";
