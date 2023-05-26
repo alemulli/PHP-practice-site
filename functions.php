@@ -2,12 +2,12 @@
 
 //useful for inspecting, save the code
 
-// function dumpanddie($value) {
-//     echo "<pre>";
-// var_dump($value);
-// echo "</pre>";
-// die();
-// }
+function dumpanddie($value) {
+    echo "<pre>";
+var_dump($value);
+echo "</pre>";
+die();
+}
 
 // dumpanddie($_SERVER);
 
