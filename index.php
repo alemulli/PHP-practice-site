@@ -1,28 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-    <h1>
-    <?php 
-        $greeting = "Hello";
-        echo "$greeting, World";
+<!-- Associative arrays -->
+<!-- Associates a key with each item in an array -->
+
+<?php
+
+function countdown() {
+    for ($i = 10; $i >= 0; $i--) {
+        echo $i;
         echo "<br>";
-        echo "I can make changes! Did it work?";
-        for ($i = 10; $i >= 0; $i--) {
-            echo $i;
-            echo "<br>";
-            sleep(1);
-        }
+        sleep(1);
+    }
+}
 
-    ?>
-    </h1>
+$books = [
+    [
+        'name' => 'Do Androids Dream of Electric Sheep',
+        'author' => 'Phillip K. Dick'
+    ],
+    [
+        'name' => 'Project Hail Mary',
+        'author' => 'Andy Weir'
+    ],
+    [
+        'name' => 'House of Leaves',
+        'author' => 'Mark Danielewski'
+    ],
+    [
+        'name' => 'The Martian',
+        'author' => 'Andy Weir'
+    ]
+];
+
+function filter($array, $key, $value)
+{
+    $filteredArray = [];
+
+    foreach ($array as $element) {
+        if ($element[$key] === $value) {
+            $filteredArray[] = $element;
+        };
+    };
+    return $filteredArray;
+}
 
 
-</body>
-</html>
+require "index.view.php";
