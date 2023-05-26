@@ -1,10 +1,8 @@
 <?php
 
-$heading = "Dogs";
+require "functions.php";
 
-echo "<pre>";
-var_dump($_SERVER);
-echo "</pre>";
-die();
+
+$heading = "Dogs";
 
 require "./views/index.view.php";
