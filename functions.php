@@ -2,11 +2,12 @@
 
 //useful for inspecting, save the code
 
-function dumpanddie($value) {
+function dumpanddie($value)
+{
     echo "<pre>";
-var_dump($value);
-echo "</pre>";
-die();
+    var_dump($value);
+    echo "</pre>";
+    die();
 }
 
 // dumpanddie($_SERVER);
@@ -24,8 +25,7 @@ die();
 // echo $_SERVER['REQUEST_URI'] === '/' ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700';
 
 
-function urlIs ($value){
+function urlIs($value)
+{
     return $_SERVER['REQUEST_URI'] === $value;
 }
-
-
