@@ -2,12 +2,6 @@
 
 require "functions.php";
 
-$uri = $_SERVER["REQUEST_URI"];
+require "router.php";
 
-if ($uri === "/") {
-    require "./controllers/index.php";
-} else if ($uri === "/hiro") {
-    require "./controllers/hiro.php";
-} else if ($uri === "/bender") {
-    require "./controllers/bender.php";
-}
+
